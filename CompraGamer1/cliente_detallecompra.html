@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Carrito</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+</head>
+
+<style>
+        body {
+          font-family: Arial;
+          font-size: 17px;
+          padding: 8px;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .row {
+          display: -ms-flexbox; /* IE10 */
+          display: flex;
+          -ms-flex-wrap: wrap; /* IE10 */
+          flex-wrap: wrap;
+          margin: 0 -16px;
+        }
+        
+        .col-25 {
+          -ms-flex: 25%; /* IE10 */
+          flex: 25%;
+        }
+        
+        .col-50 {
+          -ms-flex: 50%; /* IE10 */
+          flex: 50%;
+        }
+        
+        .col-75 {
+          -ms-flex: 75%; /* IE10 */
+          flex: 75%;
+        }
+        
+        .col-25,
+        .col-50,
+        .col-75 {
+          padding: 0 16px;
+        }
+        
+        .container {
+          background-color: #00000081;
+          padding: 5px 20px 15px 20px;
+          border: 1px solid lightgrey;
+          border-radius: 3px;
+        }
+        
+        input[type=text] {
+          width: 100%;
+          margin-bottom: 20px;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+        }
+        
+        label {
+          margin-bottom: 10px;
+          display: block;
+        }
+        
+        .icon-container {
+          margin-bottom: 20px;
+          padding: 7px 0;
+          font-size: 24px;
+        }
+        
+        .btn {
+          background-color: #4CAF50;
+          color: white;
+          padding: 12px;
+          margin: 10px 0;
+          border: none;
+          width: 100%;
+          border-radius: 3px;
+          cursor: pointer;
+          font-size: 17px;
+        }
+        
+        .btn:hover {
+          background-color: #45a049;
+        }
+        
+        a {
+          color: #2196F3;
+        }
+        
+        hr {
+          border: 1px solid lightgrey;
+        }
+        
+        span.price {
+          float: right;
+          color: grey;
+        }
+        
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+        @media (max-width: 800px) {
+          .row {
+            flex-direction: column-reverse;
+          }
+          .col-25 {
+            margin-bottom: 20px;
+          }
+        }
+        </style>
+
+<body>
+
+    <link rel="shortcut icon" href="img/logo2ico.ico">
+    <header>
+        <div id="main">
+
+            <nav>
+                <a href="index.html"><img class="logo" src="img/LogoCG.png" width="90px" height="90px" alt="logo"></a>
+                <ul>
+                    <li><a href="indexcliente.html">Inicio</a></li>
+                    <li><a href="cliente_producto.html">Productos</a></li>
+                    <li><a href="cliente_sobrenosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="cliente_contacto.html">Contacto</a></li>
+                    <li><a href="cliente_carrito.html">Carrito</a></li>
+                    <li><a href="cliente_perfil.html">Perfil</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <br>
+
+    <a href="indexcliente.html">Inicio ></a>
+    <a style="color: white;" >Carrito de compras</a>
+
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-12 ">
+
+                    <h2>Carro de Compras</h2>
+                    <p>Por favor completa el formulario con tus datos reales para que podamos enviarte tus productos ! .</p>
+                    <div class="row">
+                      <div class="col-75">
+                        <div class="container">
+                          <form action="/pagofinalizado.html">
+                          
+                            <div class="row">
+                              <div class="col-50">
+                                <h3>Direccion de Envio</h3>
+                                <label for="fname"><i class="fa fa-user"></i> Nombre Completo</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Carolina">
+                                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                <input type="text" id="email" name="email" placeholder="Caroloca@msn.com">
+                                <label for="adr"><i class="fa fa-address-card-o"></i> Direccion</label>
+                                <input type="text" id="adr" name="address" placeholder="Calle falsa 123">
+                                <label for="city"><i class="fa fa-institution"></i> Ciudad</label>
+                                <input type="text" id="city" name="city" placeholder="Catamarca">
+                    
+                                <div class="row">
+                                  <div class="col-50">
+                                    <label for="state">Pais</label>
+                                    <input type="text" id="state" name="state" placeholder="ARG">
+                                  </div>
+                                  <div class="col-50">
+                                    <label for="zip">Codigo Postal</label>
+                                    <input type="text" id="zip" name="zip" placeholder="4700">
+                                  </div>
+                                </div>
+                              </div>
+                    
+                              <div class="col-50">
+                                <h3>Pago</h3>
+                                <label for="fname">Tarjetas Aceptadas</label>
+                                <div class="icon-container">
+                                  <img src="img/tarjetas.png" alt="">
+                                </div>
+                                <label for="cname">Nombre en la Tarjeta</label>
+                                <input type="text" id="cname" name="cardname" placeholder="Carolina Plumez">
+                                <label for="ccnum">Numero de Tarjeta</label>
+                                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                                <label for="expmonth">Mes de Expiracion</label>
+                                <input type="text" id="expmonth" name="expmonth" placeholder="Octubre">
+                                <div class="row">
+                                  <div class="col-50">
+                                    <label for="expyear">Año de Expiracion</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="2018">
+                                  </div>
+                                  <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <label>
+                              <input type="checkbox" checked="checked" name="sameadr">  Enviar el paquete a mi direccion
+                            </label>
+                            
+                            <a class="btn" href="pagofinalizado.html">Comprar!</a>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="col-25">
+                        <div class="container">
+                          <h4>Carrito <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+                          <p><a href="info_teclado.html">Teclado Razer</a> <span class="price">$2500</span></p>
+                          <p><a href="info_monitor.html">Monitor Samsung</a> <span class="price">$1505</span></p>
+                          <p><a href="#">Disco SSD 480GB</a> <span class="price">$800</span></p>
+                          <p><a href="info_2080.html">Placa 2080ti</a> <span class="price">$20000</span></p>
+                          <hr>
+                          <p>Total <span class="price" style="color:rgba(255, 255, 255, 0.513)"><b>$25.050,00</b></span></p>
+                        </div>
+                      </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <address class="text-fot">Todos los derechos reservados a COMPRA GAMER</address>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Galeria de imagenes</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilosgaleria.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+
+</head>
+
+<body>
+
+    <link rel="shortcut icon" href="img/logo2ico.ico">
+    <header>
+        <div id="main">
+
+            <nav>
+                <a href="index.html"><img class="logo" src="img/LogoCG.png" width="90px" height="90px" alt="logo"></a>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="iniciar_sesion.html">Contacto</a></li>
+                    <li><a href="iniciar_sesion.html">Carrito</a></li>
+                    <li><a href="iniciar_sesion.html">Iniciar Sesion</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <a href="index.html">Inicio ></a>
+    <a style="color: white;">Galeria de Imagenes</a>
+
+
+    <h1 style="color: blanchedalmond;">Imagenes</h1>
+
+    <div style="max-width: 900px;" class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Full-width images with number text -->
+        <div class="mySlides text-center ">
+            <div class="numbertext ">1 / 6</div>
+              <img src="img/Foto1.png" style="width:100%; ">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+              <img src="img/Foto2.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+              <img src="img/Foto3.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+              <img src="img/Foto4.jfif" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+              <img src="img/Foto1.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+              <img src="img/Foto2.png" style="width:100%">
+          </div>
+        
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+          <!-- Image text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+        
+          <!-- Thumbnail images -->
+          <div class="row mt-4">
+            <div class="column">
+              <img class="demo cursor" src="img/Foto1.png" style="width:120%" onclick="currentSlide(1)" alt="pc gamer">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/Foto2.png" style="width:100%" onclick="currentSlide(2)" alt="MAC gamer">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/Foto3.png" style="width:100%" onclick="currentSlide(3)" alt="Pc gamer">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/Foto4.jfif" style="width:100%" onclick="currentSlide(4)" alt="PC y silla gamer">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/Foto1.png" style="width:100%" onclick="currentSlide(5)" alt="PC gamer">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/Foto2.png" style="width:100%" onclick="currentSlide(6)" alt="MAC GAMER">
+            </div>
+          </div>
+            </div>
+        </div>
+        
+        <a href="img/Imagenes.rar" download="Reporte2Mayo2010">
+          Descargar Archivo
+          </a>  
+          
+    </div>
+
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
+
+
+</body>
+<footer class="mt-5">
+    <address>Todos los derechos reservados a COMPRA GAMER</address>
+</footer>
+
+</html>

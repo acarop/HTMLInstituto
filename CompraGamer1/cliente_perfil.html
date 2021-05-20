@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Perfil Cliente</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+          border-radius: 5px;
+          background-color: #000000c9;
+          padding: 20px;
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <link rel="shortcut icon" href="img/logo2ico.ico">
+    <header>
+        <div id="main">
+
+            <nav>
+                <a href="index.html"><img class="logo" src="img/LogoCG.png" width="90px" height="90px" alt="logo"></a>
+                <ul>
+                    <li><a href="indexcliente.html">Inicio</a></li>
+                    <li><a href="cliente_producto.html">Productos</a></li>
+                    <li><a href="cliente_sobrenosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="cliente_contacto.html">Contacto</a></li>
+                    <li><a href="cliente_carrito.html">Carrito</a></li>
+                    <li><a href="cliente_perfil.html">Perfil</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <a href="indexcliente.html">Inicio ></a>
+    <a style="color: rgb(182, 182, 182);">Perfil</a><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <img src="img/img_avatar.png" alt="">
+                <h4 class="text-white">Nombre Apellido</h4>
+            </div>
+
+            <div class="col-6">
+                    <form>
+                        <h4>Cambiar Contraseña</h4>
+                              <div class="form-group">
+                                <label for="exampleInputPassword1">Contraseña Vieja</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                              </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Nueva Contraseña</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+
+
+                            <div class="form-group">
+                                    <label for="exampleInputPassword1">Repite la Nueva Contraseña</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+
+
+                            <div class="form-group form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Quiero Recibir noticias en mi correo electronico</label>
+                            </div>
+                            <button type="submit" class="btn btn-danger">Guardar Cambios</button>
+                          </form>     
+            </div>
+
+            <div class="col-12 my-5">
+                <h4 class="text-white">Mis Compras</h4>
+                <br>
+                <table class="table table-dark table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col">#ID</th>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Fecha</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">#15184</th>
+                            <td><a href="info_monitor.html">Monitor Samsung</a></td>
+                            <td>$25.000</td>
+                            <td>14/10/2019</td>
+                          </tr>
+                          <tr>
+                                <th scope="row">#34184</th>
+                                <td><a href="info_teclado.html">Teclado Razer </a></td>
+                                <td>$25.000</td>
+                                <td>5/5/2019</td>
+                          </tr>
+                          <tr>
+                                <th scope="row">#5524</th>
+                                <td><a href="info_2080.html">Placa de Video 2080</a></td>
+                                <td>$25.000</td>
+                                <td>15/10/2019</td>
+                          </tr>
+                        </tbody>
+                      </table>
+            </div>
+        </div>
+
+        <a href="index.html" type="submit" class="btn btn-danger">Salir</button>
+    </div>
+
+    <footer class="footer mt-5">
+
+        <address>Todos los derechos reservados a COMPRA GAMER</address>
+    </footer>
+
+
+</body>
+
+</html>
